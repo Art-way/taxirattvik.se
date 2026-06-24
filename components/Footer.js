@@ -9,7 +9,7 @@ export default function Footer() {
           <Link className="brand brand--footer" href="/">
             <img className="brand-logo brand-logo--footer" src="/assets/img/logo.svg" alt={siteConfig.name} width="210" height="105" />
           </Link>
-          <p>{siteConfig.name} erbjuder trygga taxiresor i {siteConfig.city} och Dalarna. Ring direkt eller boka online.</p>
+          <p>{siteConfig.name} erbjuder trygga taxiresor och budkörningar i {siteConfig.city} och Dalarna. Ring direkt eller boka online.</p>
         </div>
         <div>
           <h2>Kontakt</h2>
@@ -20,12 +20,15 @@ export default function Footer() {
         <div>
           <h2>Öppettider</h2>
           <p>Öppet dygnet runt alla dagar.</p>
-          <p>Förbokning rekommenderas vid längre resor.</p>
+          <p>Förbokning rekommenderas vid längre resor och planerade bud.</p>
         </div>
         <div>
           <h2>Sidor</h2>
           <Link href="/">Startsida</Link>
           <Link href="/om-oss">Om oss</Link>
+          <Link href="/bud-paket">Bud & paket</Link>
+          <Link href="/taxi-dalhalla-rattvik">Taxi till Dalhalla</Link>
+          <Link href="/taxi-classic-car-week-rattvik">Taxi till Classic Car Week</Link>
           <Link href="/kontakta-oss">Kontakta oss</Link>
           <Link href="/integritetspolicy">Integritetspolicy</Link>
         </div>

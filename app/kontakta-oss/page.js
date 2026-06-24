@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BookingForm from "../../components/BookingForm";
 import { phoneDisplay, phoneHref, siteConfig } from "../../lib/site";
 
@@ -32,6 +33,10 @@ export default function ContactPage() {
               <a href={`tel:${phoneHref}`}><span>Telefon</span><strong>{phoneDisplay}</strong></a>
               <a href={`mailto:info@${siteConfig.domain}`}><span>E-post</span><strong>info@{siteConfig.domain}</strong></a>
               <div><span>Område</span><strong>{siteConfig.city}, Dalarna</strong></div>
+            </div>
+            <div className="event-links event-links--compact event-links--dark">
+              <Link href="/taxi-dalhalla-rattvik">Taxi till Dalhalla</Link>
+              <Link href="/taxi-classic-car-week-rattvik">Taxi till Classic Car Week</Link>
             </div>
           </div>
           <BookingForm />

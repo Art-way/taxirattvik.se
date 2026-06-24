@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BookingForm from "../components/BookingForm";
 import { phoneDisplay, phoneHref, siteConfig } from "../lib/site";
 
@@ -103,9 +104,15 @@ export default function Home() {
             <h2>Populära körningar från {siteConfig.city}</h2>
             <p>Ring oss på <a href={`tel:${phoneHref}`}>{phoneDisplay}</a> för snabb bokning eller använd formuläret om du vill förboka.</p>
           </div>
-          <ul className="route-list">
-            {siteConfig.routes.map((route) => <li key={route}>{route}</li>)}
-          </ul>
+          <div>
+            <ul className="route-list">
+              {siteConfig.routes.map((route) => <li key={route}>{route}</li>)}
+            </ul>
+            <div className="event-links">
+              <Link href="/taxi-dalhalla-rattvik">Taxi till Dalhalla</Link>
+              <Link href="/taxi-classic-car-week-rattvik">Taxi till Classic Car Week</Link>
+            </div>
+          </div>
         </div>
       </section>
 
